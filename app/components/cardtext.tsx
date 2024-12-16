@@ -19,7 +19,8 @@ export default function CardText() {
         </h5>
       </div>
       <div className="w-[82.2px] h-[16px] flex justify-center">
-        <Image src={colours} alt="colours" />
+      <img src="/about/Product-colors.png" alt="Product Colors" />
+
       </div>
     </div>
   );
