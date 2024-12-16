@@ -1,5 +1,5 @@
 import Image from "next/image";
-import colours from '../../public/about/Product-colors.png'
+import colours from '../../public/about/Product-colors.png'; // Importing the image
 
 export default function CardText() {
   return (
@@ -19,8 +19,14 @@ export default function CardText() {
         </h5>
       </div>
       <div className="w-[82.2px] h-[16px] flex justify-center">
-      <img src="/about/Product-colors.png" alt="Product Colors" />
-
+        {/* Use Next.js Image component */}
+        <Image 
+          src={colours} 
+          alt="Product Colors" 
+          width={82}  // specify the width of the image
+          height={16} // specify the height of the image
+          layout="intrinsic" // automatically adjust to the provided width and height
+        />
       </div>
     </div>
   );
