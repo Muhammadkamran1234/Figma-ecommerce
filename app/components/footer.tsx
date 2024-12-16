@@ -1,17 +1,17 @@
 import React from "react";
+import Image from "next/image";  // Importing Image component from next/image
+import img1 from '../../public/about/col-md-3 (1).png';  // Importing the image
 
-export default function Footer () {
+export default function Footer() {
   return (
     <footer className="bg-gray-50 text-gray-700 mt-[4700px]">
       <div className="container mx-auto px-6 py-10">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <h2 className="text-2xl font-bold text-gray-800">Bandage</h2>
-          <img
-            src="./col-md-3(1).png"
-            alt="Icons"
-            className="h-8 w-auto"
-          />
+          {/* Using the imported image */}
+          <Image src={img1} alt="Bandage logo" width={100} height={100} /> 
+          <span>123 456</span>
         </div>
 
         {/* Middle Section */}
